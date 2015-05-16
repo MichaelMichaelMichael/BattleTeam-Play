@@ -4,8 +4,11 @@
     <title>Battle Team</title>
   </head>
   <body>
-  
-  
+
+  <input type="text" id = "CP" style="position:absolute; width:98.3%; bottom:10px;"/>
+
+
+
   
   
   
@@ -16,17 +19,46 @@
   
   
   <script>
-  document.addEventListener("keypress",function(e){
-    if (e.keyCode == 71){
-    
-    console.log("hello");
-    }
-  })
+//useless vars
+
+//useful vars
+
+//useful codes
+
+//useless codes
+window.resize= function(e){
+	var w = (this.innerWidth); 
+	var h = (this.innerHeight); 
+//command prompt vars
+var hidingYes= false;
+var cp = document.getElementById("CP");
+//command prompt codes
+document.addEventListener("keypress",function(e){
+	
+	if(e.keyCode == 99){
+		
+		if(hidingYes == false){
+			cp.style.display="none";
+		}
+		else{
+			cp.style.display="block";
+		}
+		hidingYes= !hidingYes
+
+	}
+	console.log(cp.value);
+	if (cp.value == "||"{
+
+}
+
+
+
+}
+});
+};  
   
-  
+
+
   </script>
-  
-  
-  
-  </body>
+</body>
 </html>
